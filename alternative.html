@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+
+      <link rel="stylesheet" href="style.css">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    
+    width: 33.3%;
+    padding: 10px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+
+        width: 100%;
+    }
+}
+
+.container1 {
+  margin: 2px;
+  max-width: 300px;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.Q{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="w3-container">
+  
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openCity(event, 'Info');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">MEDICINE INFORMATION</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Substitute');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">SUBSTITUTE</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Availability');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">AVAILABILITY</div>
+    </a>
+  </div>
+
+  <div id="Substitute" class="w3-container city" style="display:none"><div class="w3-container w3-center w3-animate-zoom">
+
+<h2 style="text-align:center; background-color: blue;color: white;" >Available subtitute for EXIZOL SHAMPOO 50ml</h2>
+</div>
+<div class="columns"><div class="w3-container w3-center w3-animate-zoom">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">CANDID KZ 2% SOAP 75GM</li>
+    <div class="w3-tooltip">
+ 	 
+  	<img src="exinol.jpeg" alt="Exinol">
+	<p class="w3-text">EXIZOL ANTIDANDRUFF contains ketoconazole, which is an antifungal agent that targets an increased number of yeasts on the skin called Malassezia</p></div>
+    <li class="grey" >Price: Rs. 142.00<font color="red"> In Stock</font></li>
+    
+    
+    <li class="grey"><a href="#" class="button">Add To Cart</a></li>
+  </ul>
+</div>
+</div>
+<div class="columns"><div class="w3-container w3-center w3-animate-zoom">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">KENEZOLE 2% SHAMPOO 60ML</li>
+    <div class="w3-tooltip">
+ 	 
+  	<img src="exinol.jpeg" alt="Exinol">
+	<p class="w3-text">EXIZOL ANTIDANDRUFF contains ketoconazole, which is an antifungal agent that targets an increased number of yeasts on the skin called Malassezia</p></div>
+    <li class="grey">Price: Rs. 142.00   <font color="red"> In Stock</font></li>
+     
+    <li class="grey"><a href="#" class="button">Add To Cart</a></li>
+  </ul>
+</div>
+</div>
+<div class="columns"><div class="w3-container w3-center w3-animate-zoom">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">CANDID KZ 2% SOAP 75GM</li>
+    <div class="w3-tooltip">
+ 	 
+  	<img src="exinol.jpeg" alt="Exinol">
+	<p class="w3-text">EXIZOL ANTIDANDRUFF contains ketoconazole, which is an antifungal agent that targets an increased number of yeasts on the skin called Malassezia</p></div>
+    <li class="grey">Price: Rs. 142.00<font color="red"> In Stock</font></li>
+        
+    
+    
+    <li class="grey"><a href="#" class="button">Add To Cart</a>
+</li>
+  </ul>
+
+</div></div>
+</div>
+
+<div id="Info" class="w3-container city" style="display:block">
+	<div class="w3-container w3-center w3-animate-zoom">
+
+	<h2 style="text-align:center; background-color: blue;color: white;" >Medicine Information</h2>
+</div>
+
+<div class="row">
+	<div style="float:left;width:35%;padding:15px">
+		<img src="exinol.jpeg" width="100%">
+		<center><h3>EXIZOL 2% SHAMPOO</h3></center>
+	</div>
+	<br>
+	<div  style="float:left;width:30%;padding:15px">
+		<div style="background-color:#e7f3fe;
+    border-left: 6px solid #2196F3; padding:6px; width:100%;">
+  		<br><p><font size="4px"> Exizol 2% Shampoo helps in the treatment of fungal and yeast infections of the body. It belongs to the drug group known as azole antifungals. The medication prevents the growth of various types of fungi by disrupting the production of the membranes that surrounds the fungal cells. It is available in the form of a tablet that can be taken orally.</p>
+		</font></div>
+		
+		<div style="background-color:#F6E0F5;
+    border-left: 6px solid #F122E7; padding:6px; width:100%;">
+  		<br><p><font size="4px"> FLAT 15% OFF Medicines (min. order: Rs. 250) + 35% NMS SuperCash* (max. Rs. 3000) *on All Full Pre-Paid Orders - Cashback validity: 100 days</p>
+		</font></div>
+	</div>
+	<div style="float:left;width:30%;padding:15px">
+		<form action="#" class="container1">
+    	<h3>In Stock</h3>
+
+    	<label for="email"><b>Quantity And Price</b></label>
+    	<br>
+    	<select name="Q" class="Q">
+	  		<option value="1 -Rs. 300">1 -Rs. 310</option>
+	  		<option value="saab">2 -Rs. 620</option>
+	  		<option value="fiat">3 -Rs. 930</option>
+	  		<option value="audi">4 -Rs. 1240</option>
+		</select>
+    	<label for="psw"><b>Product Code</b></label>
+    	<input type="text" placeholder="#12300A" name="psw" disabled="true">
+
+    	<button type="submit" class="btn">Add To Cart</button>
+  		</form>
+	</div>
+
+
+</div>
+
+
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-pagelines"></span><span class="hidden-xs">THERAPEUTIC USES</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-user-md"></span><span class="hidden-xs">WARNING & PRECAUTIONS</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-pencil-square-o"></span><span class="hidden-xs">DIRECTIONS FOR USE</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-heartbeat"></span><span class="hidden-xs">SIDE EFFECTS</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    
+                    
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>What EXIZOL ANTIDANDRUFF is used for?</h2>
+                                   <ul>
+                                    <li>
+                                        It is used to treat and prevent dandruff and dry or greasy scaling of the scalp (seborrhoeic dermatitis)
+                                    <li>
+                                        It is also used to treat the inflammation associated with dandruff, relieving scalp redness and itching
+                                    </li>
+                            
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>Talk to your doctor before using this medicine, if you:</h2>
+                                   <ul>
+                                       <li>are allergic to ketoconazole or to any other contents of this medicine</li>
+                                       <li>are pregnant or breast-feeding</li>
+                                   </ul>
+                                   <h4>Note: This product is for use in adults and adolescents over 12 years of age</h4>
+
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<ul>
+                                        <li>Always use this medicine exactly as your doctor has told you</li>
+                                        <li>For external use only</li>
+                                        <li>Use every 3 or 4 days for 2 - 4 weeks</li>
+                                        <li>If your scalp has not cleared within 4 weeks, speak to your doctor</li>
+                                        <li>If the shampoo gets into your eyes wash with plenty of water</li>         
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                                                                                
+                                              <div class="w3-padding"><H4>Like all medicines, this medicine can cause side effects, although not everybody gets them.</H4></div>
+                              					<h4>SERIOUS SIDE EFFECTS</h4>
+                                                <ul>
+                                                    <li>severe allergic reactions, including swelling of the face, lips, tongue or throat</li>
+
+                                                </ul>
+                                                 <h4>UNCOMMON</h4>
+                                                <ul>
+                                                    <li>application site reactions including itching, irritation, blistering, red, dry or tender skin or a skin burning sensation</li>
+                                                    <li>inflamed hair follicles, hair loss or changes in hair texture</li>
+                                                    <li>increased tear production</li>
+                                                    <li>increased tear production</li>
+                                                </ul>
+                                                <h4>RARE</h4>
+                                                <ul>
+                                                    <li>Eye irritation</li>
+                                                    <li>Acne</li>
+                                                    <li>Skin inflammation (dermatitis)</li>
+                                                    <li>Flaking skin</li>
+                                                </ul>
+
+                                
+                            </div></div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>This is the content of tab five.</h2>
+                                    <p>This field is a rich HTML field with a content editor like others used in Sitefinity. It accepts images, video, tables, text, etc. Street art polaroid microdosing la croix taxidermy. Jean shorts kinfolk distillery lumbersexual pinterest XOXO semiotics. Tilde meggings asymmetrical literally pork belly, heirloom food truck YOLO. Meh echo park lyft typewriter. </p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>This is the content of tab six.</h2>
+                                    <p>This field is a rich HTML field with a content editor like others used in Sitefinity. It accepts images, video, tables, text, etc. Street art polaroid microdosing la croix taxidermy. Jean shorts kinfolk distillery lumbersexual pinterest XOXO semiotics. Tilde meggings asymmetrical literally pork belly, heirloom food truck YOLO. Meh echo park lyft typewriter. </p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+        </div>
+
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+</script>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+    <br>
+<footer class="page-footer font-small blue pt-4" style="background: black; color: white">
+
+    <div class=" container-fluid text-center text-md-left">
+
+      <div class="row">
+
+        <div class="col-md-3 mt-md-0 mt-3">
+         <b> <h5 class="text-uppercase" style="font-weight: bolder">ABOUT US</h5></b>
+          <p>Trusted since 1978.MedAt, is brought to you by the AMPR & Company – one of India’s most trusted pharmacies, with over 50 years’ experience in dispensing quality medicines</p>
+          <a href="#about"> Read More >> </a><br><br>
+          <a href="#top"> Goto Top </a>
+        </div>
+
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <b><h5 class="text-uppercase" style="font-weight: bolder">PRESCRIPTION DRUGS</h5></b>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Browse by A to Z</a>
+              </li>
+              <li>
+                <a href="#!">Browse by Manufactures</a>
+              </li>
+              <li>
+                <br> <button style="background-color: #ff4d4d; "> Upload Prescription</button>
+              </li>
+              <li>
+               <br><h6>NEED HELP?</h6><br>
+               <img class="face" height="20px" src="call.png">700-888-9090
+              </li>
+            </ul>
+
+          </div>
+
+           <div class="col-md-3 mb-md-0 mb-3">
+
+            <h5 class="text-uppercase" style="font-weight: bolder">CATEGORIES</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Fitness</a>
+              </li>
+              <li>
+                <a href="#!">Lifestyle</a>
+              </li>
+              <li>
+                <a href="#!">Personal Care</a>
+              </li>
+              <li>
+                <a href="#!">Treatments</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase" style="font-weight: bolder">STAY IN TOUCH</h5>
+            <h6> Follow Us</h6>
+            <ul class="list-unstyled">
+              <li>
+                              <a href="#"><img src="facebook.jpg" class="face" height="20px" style="border-radius: 45%" alt="facebook"></a>
+                               <a href="#"><img src="tweet.png" class="face" height="20px" style="border-radius: 45%" alt="facebook"></a>
+                                <a href="#"><img src="insta.png" class="face" height="20px" style="border-radius: 45%" alt="facebook"></a>
+              </li>
+              <li>
+               <br> <h6>Get a free subscription to our health and fitness tip and stay tuned to our latest offers Sign Up for Our Newsletter: </h6><br>
+                <input type="text" style="color: black" value="Enter Your Email id" name="go"> <br><br>
+                <button name="GO" class="btn btn-rose" style="height: 35px;width: 40px; border-radius: 45%; background-color: #ff4d4d" value="button" >Go!
+                </button>
+              </li>
+              
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class=" footer-copyright text-center py-3" style="background: #003d4d;height: 50px; color: white">Copyright &copy; 2018 AMPR Company. <br>
+    	All rights Reserved.
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> AMPR digisol.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+</body>
+
+
+
+</html>
